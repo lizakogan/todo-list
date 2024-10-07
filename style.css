@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css?family=Gochi+Hand");
+
+body {
+  background-color: #c6bef5;
+  min-height: 70vh;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #494a4b;
+  font-family: "Gochi Hand", cursive;
+  text-align: center;
+  font-size: 135%;
+}
+
+@media only screen and (min-width: 500px) {
+  body {
+    min-height: 100vh;
+  }
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  max-width: 500px;
+  min-width: 250px;
+  background: #f1f5f8;
+  background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
+  background-size: 25px 25px;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  margin-bottom: 1rem;
+}
+
+.heading__title {
+  transform: rotate(3deg);
+  padding: 0.5rem 1.5rem;
+  border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+  background-color: rgb(223, 165, 221);
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .heading__title {
+    font-size: 2rem;
+  }
+}
+
+.heading__img {
+  width: 29%;
+}
+.form__label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.form__input {
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 0.7rem;
+  border-bottom-right-radius: 15px 3px;
+  border-bottom-left-radius: 3px 15px;
+  border: solid 3px transparent;
+  border-bottom: dashed 3px #ea95e0;
+  font-family: "Gochi Hand", cursive;
+  font-size: 1.5rem;
+  color: rgba(63, 62, 65, 0.7);
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+.form__input:focus {
+  outline: none;
+  border: solid 3px #ea95e0;
+}
+
+@media only screen and (min-width: 500px) {
+  .form__input {
+    width: 60%;
+  }
+}
+
+.button {
+  padding: 0;
+  border: none;
+  transform: rotate(7deg);
+  transform-origin: center;
+  font-family: "Gochi Hand", cursive;
+  border-radius: 5px;
+  box-shadow: 0 2px 0 #494a4b;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.button span {
+  background: #f1f5f8;
+  display: block;
+  padding: 0.3rem 2rem;
+  border-radius: 5px;
+  border: 2px solid #494a4b;
+}
+
+.button:active, .button:focus {
+  transform: translateY(4px);
+  padding-bottom: 0px;
+  outline: 0;
+}
+
+.toDoList {
+  text-align: right;
+}
+
+.toDoList li {
+  direction: rtl;
+  text-align: right;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.checkbox {
+  position: relative;
+  margin-right: 10px; /* Adjust distance from text */
+  appearance: none; /* Hide default checkbox styling */
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.checkbox:hover {
+  background-color: rgb(106, 215, 166); /* Changes background on hover */
+}
+
+.checkbox:hover::before {
+  content: '✔'; /* Display checkmark on hover */
+  color: rgb(254, 254, 254); /* Greyish color for the hover */
+  font-size: 18px;
+}
+
+
+
+
+
+
