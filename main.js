@@ -6,7 +6,6 @@
   const input = form.querySelector(".form__input");
   const ul = document.querySelector(".toDoList"); 
 
-  // טוען את המשימות מה-localStorage כשנטען העמוד
   window.addEventListener('load', () => {
     toDoListArray.forEach(item => addItemToDOM(item.itemId, item.toDoItem));
   });
